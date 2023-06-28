@@ -14,22 +14,21 @@ public class ReadFile {
         int res = 0;
         try {
             BufferedReader br = new BufferedReader(new FileReader(file));
-                try {      int[] ints = br.lines().mapToInt(Integer::parseInt).toArray();
-                    for (int num: ints
-                    ) {  System.out.println(num);
+                try {
+                    int[] ints = br.lines().mapToInt(Integer::parseInt).toArray();
+                    for (int num: ints) {
+                        System.out.println(num);
                         res += num;
                     }
                     System.out.println("Сумма : " + res);
 
                 }  catch (NumberFormatException ex){
-                    System.out.println("Строка содержит не корректные символы! ");
+                    System.out.println("Строка содержит некорректные символы! ");
                 }
         } catch (IOException e) {
             throw new IOException("Failed to read file: " + e);
         }
-
     }
-
 }
 
 
