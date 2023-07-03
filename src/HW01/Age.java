@@ -29,7 +29,7 @@ public class Age {
             userAge();
             System.out.println("Возраст пользователя : " + age);
         }   catch (NumberFormatException e) {
-                System.out.println("Некорректный ввод");
+                System.out.println("Ошибка! Некорректный ввод.");
         }
     }
 }
