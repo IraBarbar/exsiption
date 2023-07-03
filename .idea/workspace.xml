@@ -5,15 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ffa11d56-5c37-446c-9049-c2410fe4ce52" name="Changes" comment="Formatted the code">
-      <change afterPath="$PROJECT_DIR$/src/HW02/Division.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/HW02/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/HW02/MyException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/HW02/Number.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/HW02/Readme" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/HW02/ThreeNumbers.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/HW03/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/HW03/MyException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/HW03/PowerCalculator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/HW03/Readme" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/HW01/Age.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HW01/Age.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/HW01/file" beforeDir="false" afterPath="$PROJECT_DIR$/src/HW01/file" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,6 +68,17 @@
     </task>
     <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Formatted the code" />
