@@ -33,6 +33,7 @@ public class Transaction {
                       clientTo.setBalans(transaction);
 
                       
+<<<<<<< HEAD
                   } catch (InvalidInputException e) {
                       System.out.println("Ошибка." + e.getMessage());
                   }
@@ -42,6 +43,17 @@ public class Transaction {
               }
 
           } catch (InvalidInputException e) {
+=======
+                  } catch (MyException e) {
+                      System.out.println("Ошибка." + e.getMessage());
+                  }
+
+              } catch (MyException e) {
+                  System.out.println("Ошибка. " + e.getMessage());
+              }
+
+          } catch (MyException e) {
+>>>>>>> origin/main
               System.out.println("Ошибка. " + e.getMessage());
           }
           finally {
@@ -52,6 +64,7 @@ public class Transaction {
     }
 
 
+<<<<<<< HEAD
     private boolean checkSumLessZero(float transaction) throws InvalidInputException {
         if (transaction < 0 )
             throw new InvalidInputException("Сумма мешьше ноля.")  ;
@@ -66,6 +79,28 @@ public class Transaction {
     private boolean isDigital(String s1) throws InvalidInputException {
         if (!s1.matches(".*\\d.*")) {
             throw new InvalidInputException("Некорректное число!");
+=======
+    private boolean checkSumLessZero(float transaction) throws MyException{
+        if (transaction < 0 )
+            throw new MyException("Сумма мешьше ноля.")  ;
+        return true;
+    }
+    private boolean  checkSumMoreBalans ( float transaction) throws MyException{
+       if (transaction > clientFrom.getBalans())
+           throw new MyException("Сумма привышает баланс.") ;
+       return true;
+    }
+
+    private boolean isDigital(String s1) throws MyException{
+        if (!s1.matches(".*\\d.*")) {
+            throw new MyException("Некорректное число!");
+        }
+        return true;
+    }
+    private boolean numCheck(int num) throws MyException{
+        if ( num != clientFrom.nameCheck) {
+            throw new MyException("Неправильный номер счета");
+>>>>>>> origin/main
         }
         return true;
     }
